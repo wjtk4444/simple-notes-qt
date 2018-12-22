@@ -5,7 +5,7 @@
 #include<QObject>
 #include<QDebug>
 
-
+// https://stackoverflow.com/a/34238144
 class FocusWatcher : public QObject
 {
    Q_OBJECT
