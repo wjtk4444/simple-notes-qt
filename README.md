@@ -21,7 +21,7 @@ I do recommend to write a single-line bash script, and make it start with the sy
 #!/bin/bash
 notes ~/Documents/my_notes.txt &
 ```
-Additionally, check my custom kWin rule settings [here](kWinSettings/)
+Additionally, check my custom kWin rule settings [here](/wjtk4444/simple_notes_qt/edit/master/kWinSettings/)
 
 # somewhat important note
 Notes are saved everytime the contents changed *duh* and when the program window **loses it's focus!** Make sure you won't make some important notes and then shut down the pc while keeping notes window focused. I don't think that it is something that could happen under normal circumstances, but better safe than sorry.
