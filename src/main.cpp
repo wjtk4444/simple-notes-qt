@@ -37,6 +37,7 @@ public:
         textEdit.setFontFamily("Noto Mono");
         textEdit.setFontPointSize(12);
         textEdit.setText(getFileContents(filename));
+        textEdit.setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
 
         QObject::connect(new FocusWatcher(&textEdit), &FocusWatcher::focusChanged, this, &MyNote::onFocusLoss);
         QObject::connect(&textEdit, SIGNAL(textChanged()), this, SLOT(onTextChanged()));
