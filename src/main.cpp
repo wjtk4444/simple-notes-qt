@@ -106,7 +106,7 @@ private:
 
 void printUsageAndExit(char *argv0)
 {
-    qDebug() << "USAGE:" << argv0 << "filename";
+    qDebug() << "USAGE:" << argv0 << "<filename>";
     exit(0);
 }
 
