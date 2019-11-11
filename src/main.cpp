@@ -34,10 +34,11 @@ class MyNote : public QTextEdit
 public:
     MyNote(QString filename, QWidget *parent = nullptr) : QTextEdit(parent), filename(filename)
     {
-        textEdit.setFontFamily("Noto Mono");
+        textEdit.setFontFamily("SF Mono");
         textEdit.setFontPointSize(12);
         textEdit.setText(getFileContents(filename));
         textEdit.setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+        textEdit.setAcceptRichText(false);
 
         QObject::connect(new FocusWatcher(&textEdit), &FocusWatcher::focusChanged, this, &MyNote::onFocusLoss);
         QObject::connect(&textEdit, SIGNAL(textChanged()), this, SLOT(onTextChanged()));
