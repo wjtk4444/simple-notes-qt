@@ -1,5 +1,4 @@
 # simple-notes-qt
-Simple notes application
 
 A simple notes application written in qt.  
 1 file, ~125 LOC.  
@@ -27,4 +26,4 @@ It's pretty much useless without them, unless you'll do some minor code edits to
 There is no way to customize this application other than editing the source code. And there won't be. This is not an acutal project, just a tool I made for myself to make my life easier. Feel free to modify it to you liking.
 
 # somewhat important note
-Notes are saved everytime the contents changed *duh* and when the program window **loses it's focus** Make sure you won't make some important notes and then shut down the pc while keeping notes window focused. I don't think that it is something that could happen under normal circumstances, but better safe than sorry.
+Notes are saved everytime the contents have changed *(duh)* **and** when the program window **loses it's focus**. If the process gets killed while the windows is still focused (emergency shutdown? maybe?), data could be lost. I don't think that it is something that could happen under normal circumstances.
